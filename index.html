@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b0907" />
+    <meta
+      name="description"
+      content="MEX-í-CAN: Al Grito de Guerra. Exposición audiovisual y performance en vivo. Viernes 11 de septiembre de 2026 en Magda San Ángel."
+    />
+    <meta property="og:title" content="MEX-í-CAN — Al Grito de Guerra" />
+    <meta property="og:description" content="Tres fragmentos. Tres épocas. Una misma sangre. 11.09.26 · Magda San Ángel." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-ceniza.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MEX-í-CAN — Al Grito de Guerra" />
+    <meta name="twitter:description" content="Exposición audiovisual + performance en vivo, curada por Ian Jaramillo." />
+    <meta name="twitter:image" content="assets/og-ceniza.jpg" />
+    <title>MEX-í-CAN — Al Grito de Guerra</title>
+    <link rel="icon" href="assets/logo-xcu.png" />
+    <link rel="preload" href="assets/tree-poster.webp" as="image" fetchpriority="high" />
+    <link rel="preload" href="assets/revolver-frame.webp" as="image" />
+    <link rel="preload" href="assets/revolver-drum.webp" as="image" />
+    <link rel="stylesheet" href="styles.css?v=20260903-5" />
+  </head>
+  <body>
+    <noscript>
+      <div class="noscript-card">
+        <strong>MEX-í-CAN · AL GRITO DE GUERRA</strong>
+        <span>11.09.26 · 7:30 PM · MAGDA SAN ÁNGEL</span>
+      </div>
+    </noscript>
+
+    <main id="gate" class="gate">
+      <button id="startExperience" class="start-experience" type="button" aria-label="Iniciar invitación con sonido">
+        <span class="start-sigil" aria-hidden="true"><i></i></span>
+        <span class="sr-only">Iniciar invitación con sonido</span>
+      </button>
+    </main>
+
+    <section id="ritual" class="ritual" aria-label="Introducción MEX í CAN" hidden>
+      <div class="ritual-vignette" aria-hidden="true"></div>
+      <div class="film-grain" aria-hidden="true"></div>
+      <div class="weapon-stage" aria-hidden="true">
+        <div id="weapon" class="weapon">
+          <img class="weapon-frame" src="assets/revolver-frame.webp" alt="" />
+          <div id="drum" class="weapon-drum">
+            <img src="assets/revolver-drum.webp" alt="" />
+          </div>
+          <div id="logoChamber" class="logo-chamber">
+            <img id="chamberLogo" src="assets/logo-ceniza-light.png" alt="" />
+          </div>
+        </div>
+        <div id="impactFlash" class="impact-flash"></div>
+        <div id="smoke" class="smoke">
+          <i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+      </div>
+      <p id="introStatus" class="sr-only" aria-live="polite">Ceniza</p>
+    </section>
+
+    <audio id="backgroundAudio" src="assets/ia-background.mp3" preload="auto" loop playsinline></audio>
+    <audio id="shootAudio" src="assets/shoot-sound.mp3" preload="auto" playsinline></audio>
+
+    <main id="invitation" class="invitation" hidden>
+      <section class="hero" aria-labelledby="eventTitle">
+        <img class="hero-photo" src="assets/ia-portrait.webp" alt="Retrato de íA frente a dos caballos" />
+        <div class="hero-veil" aria-hidden="true"></div>
+        <div class="film-grain" aria-hidden="true"></div>
+        <header class="hero-header">
+          <div class="hero-logos" aria-label="Ceniza, Estuche de Balatas y XCU presentan">
+            <img src="assets/logo-ceniza.png" alt="Ceniza" />
+            <img src="assets/logo-edb.png" alt="Estuche de Balatas" />
+            <img src="assets/logo-xcu.png" alt="XCU" />
+          </div>
+          <button id="replayIntro" class="replay" type="button">REPETIR INTRO</button>
+        </header>
+        <div class="hero-title">
+          <p>íA PRESENTA</p>
+          <h1 id="eventTitle">MEX-<em>í</em>-CAN</h1>
+          <h2>AL GRITO DE GUERRA</h2>
+        </div>
+        <footer class="hero-footer">
+          <div>
+            <strong>VIERNES 11 SEPTIEMBRE</strong>
+            <span>7:30 PM — 3:00 AM</span>
+          </div>
+          <div>
+            <strong>MAGDA SAN ÁNGEL</strong>
+            <span>PERFORMANCE íA · 11:25 PM</span>
+          </div>
+          <a href="#programa">DESCUBRIR ↓</a>
+        </footer>
+      </section>
+
+      <section class="question-section reveal" aria-labelledby="questionTitle">
+        <p class="section-index">00 / ORIGEN</p>
+        <h2 id="questionTitle">¿DE DÓNDE PROVIENE<br />LO QUE SOMOS<br />Y HACIA DÓNDE<br /><em>ESTAMOS YENDO?</em></h2>
+        <p class="curatorial-credit">UNA EXPOSICIÓN AUDIOVISUAL + PERFORMANCE EN VIVO<br />CURADA POR IAN JARAMILLO</p>
+      </section>
+
+      <section class="timeline-section" aria-labelledby="timelineTitle">
+        <div class="timeline-media">
+          <video
+            id="treeFilm"
+            muted
+            loop
+            playsinline
+            preload="none"
+            poster="assets/tree-poster.webp"
+            aria-label="Árbol seco que representa las raíces y el paso del tiempo"
+          >
+            <source data-src="assets/tree-timelapse.mp4" type="video/mp4" />
+          </video>
+          <div class="timeline-media-veil" aria-hidden="true"></div>
+          <div class="film-grain" aria-hidden="true"></div>
+          <header>
+            <p class="section-index">01—03 / LÍNEA DEL TIEMPO</p>
+            <h2 id="timelineTitle">MEX-<em>í</em>-CAN</h2>
+          </header>
+        </div>
+        <div class="era-directory">
+          <article class="era-entry reveal">
+            <span>01</span>
+            <h3>MEX</h3>
+            <p>Los dioses, la tierra, los ancestros, el choque del mestizaje y su mutación primicia.</p>
+          </article>
+          <article class="era-entry reveal">
+            <span>02</span>
+            <h3><em>í</em></h3>
+            <p>La Revolución, la transformación y la época de oro del cine mexicano.</p>
+          </article>
+          <article class="era-entry reveal">
+            <span>03</span>
+            <h3>CAN</h3>
+            <p>El presente, lo contemporáneo, la causa y efecto de aquello que todavía está por venir.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="manifesto-section reveal" aria-labelledby="manifestoTitle">
+        <p class="section-index">MANIFIESTO</p>
+        <h2 id="manifestoTitle">LA HISTORIA<br />NO TERMINÓ.</h2>
+        <div class="manifesto-grid">
+          <p>
+            La imagen, el cuerpo, la música y la danza se encuentran en un mismo espacio para construir una memoria que no pretende quedarse en el pasado, sino en nuestra línea del tiempo.
+          </p>
+          <p>
+            Sigue pasando por nosotros.<br /><br />Yo también soy parte de ella.<br />Yo también la porto.<br />Yo también la transformo.<br /><strong>Tú haces lo mismo.</strong>
+          </p>
+        </div>
+        <p class="manifesto-cry">MEX-í-CANs,<br /><em>AL GRITO DE GUERRA.</em></p>
+      </section>
+
+      <section id="programa" class="program-section" aria-labelledby="programTitle">
+        <header class="program-header reveal">
+          <p class="section-index">11 · 09 · 26</p>
+          <h2 id="programTitle">PROGRAMA</h2>
+          <p>DE LA APERTURA AL CIERRE</p>
+        </header>
+        <ol class="schedule">
+          <li class="reveal schedule-opening">
+            <time datetime="2026-09-11T19:30:00-06:00">7:30 <small>PM</small></time>
+            <div><strong>APERTURA</strong><span>INICIO DEL RECORRIDO</span></div>
+          </li>
+          <li class="reveal">
+            <time datetime="2026-09-11T20:00:00-06:00">8:00 <small>PM</small></time>
+            <div><strong>@JOSETOSCANOFOTO</strong><span>EXPO</span></div>
+          </li>
+          <li class="reveal">
+            <time datetime="2026-09-11T21:00:00-06:00">9:00 <small>PM</small></time>
+            <div><strong>@MECATE_</strong><span>EXPO</span></div>
+          </li>
+          <li class="reveal">
+            <time datetime="2026-09-11T22:00:00-06:00">10:00 <small>PM</small></time>
+            <div><strong>@JOSETOSCANOFOTO</strong><span>EXPO</span></div>
+          </li>
+          <li class="reveal schedule-featured">
+            <time datetime="2026-09-11T23:25:00-06:00">11:25 <small>PM</small></time>
+            <div><strong>íA</strong><span>SHOW · MEX-í-CAN</span></div>
+          </li>
+          <li class="reveal">
+            <time datetime="2026-09-12T00:00:00-06:00">12:00 <small>AM</small></time>
+            <div><strong>@KXMPACHII_</strong><span>SHOW</span></div>
+          </li>
+          <li class="reveal">
+            <time datetime="2026-09-12T01:00:00-06:00">1:00 <small>AM</small></time>
+            <div><strong>@GATIT0CIBERNETIK0</strong></div>
+          </li>
+          <li class="reveal">
+            <time datetime="2026-09-12T02:00:00-06:00">2:00 <small>AM</small></time>
+            <div><strong>@01800RODRIGO</strong></div>
+          </li>
+          <li class="reveal schedule-closing">
+            <time datetime="2026-09-12T03:00:00-06:00">3:00 <small>AM</small></time>
+            <div><strong>CIERRE</strong><span>FIN DE TRANSMISIÓN</span></div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="location-section reveal" aria-labelledby="locationTitle">
+        <div>
+          <p class="section-index">PUNTO DE ENCUENTRO</p>
+          <h2 id="locationTitle">MAGDA<br />SAN ÁNGEL</h2>
+        </div>
+        <div class="location-meta">
+          <p><strong>VIERNES 11 DE SEPTIEMBRE</strong><br />ACCESO · 7:30 PM<br />CIERRE · 3:00 AM</p>
+          <a href="https://maps.app.goo.gl/a7eKGbGnLUXEK5zz9" target="_blank" rel="noopener noreferrer">
+            ABRIR UBICACIÓN EN MAPS <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="registro" class="registration-section" aria-labelledby="registrationTitle">
+        <header class="reveal">
+          <p class="section-index">RSVP / ACCESO</p>
+          <h2 id="registrationTitle">PORTA<br />TU HISTORIA.</h2>
+          <p>Regístrate para generar tu acceso individual. Tu boleto quedará guardado en este dispositivo.</p>
+        </header>
+        <form id="registrationForm" class="registration-form reveal">
+          <label>
+            <span>NOMBRE PARA LA LISTA *</span>
+            <input name="name" type="text" autocomplete="name" minlength="2" maxlength="80" required placeholder="ESCRIBE TU NOMBRE" />
+          </label>
+          <label>
+            <span>INSTAGRAM</span>
+            <input name="instagram" type="text" autocomplete="off" maxlength="60" placeholder="@USUARIO · OPCIONAL" />
+          </label>
+          <label class="honeypot" aria-hidden="true">
+            <span>NO LLENAR</span>
+            <input name="_gotcha" type="text" tabindex="-1" autocomplete="off" />
+          </label>
+          <button id="submitRegistration" class="register-action" type="submit">
+            <span>GENERAR MI ACCESO</span><span aria-hidden="true">↗</span>
+          </button>
+          <p id="formError" class="form-error" role="alert" hidden></p>
+          <p class="privacy-copy">Tus datos se usan únicamente para la lista de acceso de este evento.</p>
+          <button id="restoreTicket" class="restore-ticket" type="button" hidden></button>
+        </form>
+      </section>
+
+      <footer class="site-footer">
+        <div class="footer-logos" aria-label="Créditos">
+          <img src="assets/logo-edb.png" alt="Estuche de Balatas" />
+          <img src="assets/logo-ceniza.png" alt="Ceniza" />
+          <img src="assets/logo-xcu.png" alt="XCU" />
+        </div>
+        <p>LA HISTORIA NO ESTÁ DETRÁS DE NOSOTROS.<br /><strong>ESTÁ CARGADA DENTRO DE NOSOTROS.</strong></p>
+        <span>CDMX · 2026</span>
+      </footer>
+    </main>
+
+    <div id="ticketOverlay" class="ticket-overlay" role="dialog" aria-modal="true" aria-label="Boleto de acceso a MEX-í-CAN" hidden>
+      <article class="digital-ticket">
+        <div class="ticket-photo" aria-hidden="true"></div>
+        <div class="ticket-veil" aria-hidden="true"></div>
+        <div class="film-grain" aria-hidden="true"></div>
+        <header class="ticket-header">
+          <span>CENIZA × EDB</span>
+          <span>ACCESS / 11.09.26</span>
+        </header>
+        <div class="ticket-title">
+          <span>íA PRESENTA</span>
+          <strong>MEX-<em>í</em>-CAN</strong>
+          <small>AL GRITO DE GUERRA</small>
+        </div>
+        <div class="ticket-event-line">
+          <strong>11</strong>
+          <span>SEPTIEMBRE<br />2026</span>
+          <span>7:30 PM<br />MAGDA SAN ÁNGEL</span>
+        </div>
+        <div class="ticket-holder">
+          <span>INVITADO</span>
+          <strong id="ticketName"></strong>
+        </div>
+        <div class="ticket-access">
+          <div><span>ACCESS TOKEN</span><strong id="ticketToken"></strong></div>
+          <img id="ticketQr" alt="Código QR individual del acceso" />
+        </div>
+        <footer class="ticket-footer">
+          <span>TRES ÉPOCAS · UNA MISMA SANGRE</span>
+          <span>RSVP CONFIRMADO</span>
+        </footer>
+      </article>
+      <div id="ticketControls" class="ticket-controls">
+        <button id="screenshotMode" type="button">MODO SCREENSHOT</button>
+        <button id="closeTicket" type="button">CERRAR</button>
+      </div>
+      <p id="cleanHint" class="clean-hint" hidden>TOMA TU SCREENSHOT · TOCA PARA VOLVER</p>
+    </div>
+
+    <script src="config.js?v=20260903-1"></script>
+    <script src="vendor/qrcode.min.js"></script>
+    <script src="script.js?v=20260903-4"></script>
+  </body>
+</html>
