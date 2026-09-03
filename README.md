@@ -30,7 +30,7 @@ vendor/             generador local de códigos QR
 - Intro a pantalla completa con tres logotipos dentro de la recámara activa, tres detonaciones, giro mecánico y humo.
 - El armazón del revólver permanece inmóvil; únicamente rota el tambor.
 - Las recámaras están vacías y negras: cada logotipo funciona como la carga que se detona y desaparece.
-- En teléfono y tablet vertical, el tambor se desplaza lateralmente y la recámara activa queda centrada; en horizontal se muestra el encuadre completo.
+- En teléfono y tablet vertical, el logotipo permanece centrado dentro de la recámara superior; en horizontal se muestra el encuadre completo.
 - El arma aparece como un contorno tenue, sin textos ni controles visibles durante la secuencia.
 - `IA BACKGROUND` comienza con el primer toque y se repite durante toda la experiencia.
 - `SHOOT SOUND` se reproduce desde el inicio en cada una de las tres detonaciones.
@@ -42,14 +42,13 @@ vendor/             generador local de códigos QR
 
 ## Registro
 
-El registro usa inicialmente el mismo buzón de Formspree que la invitación de
-Diama Penthouse, pero envía el evento como **MEX-í-CAN — Al Grito de Guerra**
-para distinguir cada respuesta.
+El registro usa el buzón de Formspree dedicado a
+**MEX-í-CAN — Al Grito de Guerra**.
 
 La configuración está en `config.js`:
 
 ```js
-formEndpoint: "https://formspree.io/f/xeajkvqp"
+formEndpoint: "https://formspree.io/f/xdeodooy"
 ```
 
 Si se crea un formulario exclusivo para Ceniza, sólo hay que reemplazar esa

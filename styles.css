@@ -579,16 +579,16 @@ a {
 
 @media (orientation: portrait) {
   .ritual {
-    --blast-y: 34%;
+    --blast-y: 22%;
   }
 
   .weapon {
-    translate: -21.4% 0;
+    translate: 0 0;
   }
 
   .logo-chamber {
-    top: 35.5%;
-    left: 71.4%;
+    top: 25.2%;
+    left: 50%;
   }
 }
 
