@@ -31,7 +31,6 @@
   const introBrands = [
     { name: "Ceniza", logo: "assets/logo-ceniza-light.png" },
     { name: "Estuche de Balatas", logo: "assets/logo-edb-light.png" },
-    { name: "XCU", logo: "assets/logo-xcu-light.png" },
   ];
 
   let audioContext;
@@ -94,7 +93,7 @@
     chamberLogo.src = brand.logo;
     chamberLogo.alt = brand.name;
     introStatus.textContent = brand.name;
-    logoChamber.dataset.brand = index === 0 ? "ceniza" : index === 1 ? "edb" : "xcu";
+    logoChamber.dataset.brand = index === 0 ? "ceniza" : "edb";
     logoChamber.classList.remove("is-detonating");
     logoChamber.classList.remove("is-hidden");
   };
@@ -173,7 +172,7 @@
         errorCorrectionLevel: "H",
         margin: 2,
         width: 320,
-        color: { dark: "#0b0907", light: "#e7d9bc" },
+        color: { dark: "#090704", light: "#eadfc9" },
       });
     } catch {
       ticketQr.removeAttribute("src");
@@ -329,10 +328,8 @@
     sequenceTimers.push(window.setTimeout(fire, 1180));
     sequenceTimers.push(window.setTimeout(() => rotateDrum(1), 1900));
     sequenceTimers.push(window.setTimeout(fire, 3430));
-    sequenceTimers.push(window.setTimeout(() => rotateDrum(2), 4150));
-    sequenceTimers.push(window.setTimeout(fire, 5680));
-    sequenceTimers.push(window.setTimeout(() => ritual.classList.add("is-leaving"), 6460));
-    sequenceTimers.push(window.setTimeout(showInvitation, 7080));
+    sequenceTimers.push(window.setTimeout(() => ritual.classList.add("is-leaving"), 4210));
+    sequenceTimers.push(window.setTimeout(showInvitation, 4830));
   };
 
   document.querySelector("#startExperience").addEventListener("click", startRitual);

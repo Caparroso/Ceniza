@@ -1,7 +1,7 @@
 # Ceniza — MEX-í-CAN: Al Grito de Guerra
 
 Invitación web estática para la exposición audiovisual y performance en vivo
-curada por Ian Jaramillo. Está preparada para GitHub Pages y para abrirse
+curada por Ceniza y Estuche de Balatas. Está preparada para GitHub Pages y para abrirse
 localmente en VS Code con Live Server.
 
 ## Vista previa en VS Code
@@ -27,13 +27,13 @@ vendor/             generador local de códigos QR
 ## Experiencia
 
 - Entrada negra y mínima: el visitante toca el sello central para habilitar el sonido.
-- Intro a pantalla completa con tres logotipos dentro de la recámara activa, tres detonaciones, giro mecánico y humo.
+- Intro a pantalla completa con los logotipos de Ceniza y Estuche de Balatas dentro de la recámara activa, dos detonaciones, giro mecánico y humo.
 - El armazón del revólver permanece inmóvil; únicamente rota el tambor.
 - Las recámaras están vacías y negras: cada logotipo funciona como la carga que se detona y desaparece.
 - En teléfono y tablet vertical, el logotipo permanece centrado dentro de la recámara superior; en horizontal se muestra el encuadre completo.
 - El arma aparece como un contorno tenue, sin textos ni controles visibles durante la secuencia.
 - `IA BACKGROUND` comienza con el primer toque y se repite durante toda la experiencia.
-- `SHOOT SOUND` se reproduce desde el inicio en cada una de las tres detonaciones.
+- `SHOOT SOUND` se reproduce desde el inicio en cada una de las dos detonaciones.
 - Fotografía principal de íA.
 - Manifiesto, línea temporal, programa, ubicación y registro.
 - Boleto individual con token, QR, recuperación local y modo screenshot.
@@ -90,9 +90,9 @@ centralizados en `config.js`. El programa y los textos curatoriales están en
 - `assets/revolver-empty.webp`: cilindro corregido con las recámaras vacías.
 - `assets/revolver-cylinder.webp`: imagen fuente conservada para futuros ajustes.
 - `assets/ia-background.mp3`: ambiente musical continuo de la invitación.
-- `assets/shoot-sound.mp3`: detonación utilizada en los tres disparos.
-- `assets/logo-ceniza.png`, `logo-edb.png`, `logo-xcu.png`: logos optimizados con transparencia.
-- `assets/logo-ceniza-light.png`, `logo-edb-light.png`, `logo-xcu-light.png`: versiones claras LOGO2 usadas dentro de las recámaras.
+- `assets/shoot-sound.mp3`: detonación utilizada en los dos disparos.
+- `assets/logo-ceniza.png`, `logo-edb.png`: logos optimizados con transparencia.
+- `assets/logo-ceniza-light.png`, `logo-edb-light.png`: versiones claras LOGO2 usadas dentro de las recámaras.
 - `assets/og-ceniza.jpg`: imagen para compartir el enlace.
 
 ## Nota de fecha
@@ -100,5 +100,6 @@ centralizados en `config.js`. El programa y los textos curatoriales están en
 La invitación usa el lineup más reciente recibido:
 
 - Apertura: 7:30 PM.
-- Show de íA: 11:25 PM.
-- Cierre: 3:00 AM.
+- Exposición fotográfica: 8:00–10:25 PM.
+- Live performance de íA: 10:30 PM.
+- Cierre: 2:00 AM.
