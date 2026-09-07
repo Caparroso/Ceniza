@@ -5,6 +5,7 @@
   --paper: #c8b48e;
   --bronze: #6d4525;
   --rust: #2e190f;
+  --i-accent: #c58952;
   --signal: #f0e2c1;
   --line: rgba(234, 223, 201, 0.3);
   --serif: "Arial Narrow", "Helvetica Neue Condensed", "Roboto Condensed", "Helvetica Neue", Arial, sans-serif;
@@ -773,7 +774,8 @@ a {
 }
 
 .era-entry h3 em {
-  color: var(--signal);
+  color: var(--i-accent);
+  text-shadow: 0 0 1.8rem rgba(197, 137, 82, 0.26);
 }
 
 .era-entry p {
@@ -1168,8 +1170,8 @@ a {
 }
 
 .final-brand {
-  width: min(72vw, 28rem);
-  max-height: 6rem;
+  width: min(36vw, 12rem);
+  max-height: 24svh;
   object-fit: contain;
 }
 
@@ -1183,6 +1185,11 @@ a {
   font-size: clamp(0.9rem, 3.2vw, 1.4rem);
   font-weight: 900;
   letter-spacing: 0.24em;
+}
+
+.final-cry-section p em {
+  color: var(--i-accent);
+  font-style: normal;
 }
 
 .final-cry-section h2 {
